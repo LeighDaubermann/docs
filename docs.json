@@ -1,0 +1,93 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "luma",
+  "name": "Woblar",
+  "description": "Documentation for Woblar — custom AI Agents for South African businesses.",
+  "colors": {
+    "primary": "#00FF88",
+    "light": "#00FF88",
+    "dark": "#00CC66"
+  },
+  "favicon": "https://icons.duckduckgo.com/ip3/woblar.com.ico",
+  "logo": {
+    "light": "https://media.brand.dev/e60aa503-c7c1-481f-a8cf-43d0e8d30491.svg",
+    "dark": "https://media.brand.dev/e60aa503-c7c1-481f-a8cf-43d0e8d30491.svg"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        { "anchor": "Home", "icon": "house", "href": "/" },
+        { "anchor": "Contact", "icon": "mail", "href": "mailto:hello@woblar.com" }
+      ]
+    },
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "onboarding"
+            ]
+          },
+          {
+            "group": "AI Agents",
+            "pages": [
+              "agents/lead-capture",
+              "agents/appointment-booking",
+              "agents/customer-support",
+              "agents/retail-vision"
+            ]
+          },
+          {
+            "group": "Channels",
+            "pages": [
+              "channels/whatsapp",
+              "channels/web-chat",
+              "channels/instagram"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/crm",
+              "integrations/calendar",
+              "integrations/pos-and-erp",
+              "integrations/accounting"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/faq",
+              "resources/privacy",
+              "resources/terms"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Get in Touch",
+      "href": "mailto:hello@woblar.com"
+    }
+  },
+  "footer": {
+    "socials": {}
+  }
+}

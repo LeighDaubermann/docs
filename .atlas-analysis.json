@@ -1,0 +1,80 @@
+{
+  "projectType": "saas",
+  "projectName": "Woblar",
+  "projectDescription": "Woblar builds and deploys custom AI Agents for South African SMBs, automating lead capture, appointment booking, customer support, and retail analytics across WhatsApp, web chat, and Instagram.",
+  "theme": "luma",
+  "primaryColor": "#00FF88",
+  "lightColor": "#00FF88",
+  "darkColor": "#00CC66",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "onboarding"
+            ]
+          },
+          {
+            "group": "AI Agents",
+            "pages": [
+              "agents/lead-capture",
+              "agents/appointment-booking",
+              "agents/customer-support",
+              "agents/retail-vision"
+            ]
+          },
+          {
+            "group": "Channels",
+            "pages": [
+              "channels/whatsapp",
+              "channels/web-chat",
+              "channels/instagram"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/crm",
+              "integrations/calendar",
+              "integrations/pos-and-erp",
+              "integrations/accounting"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/faq",
+              "resources/privacy",
+              "resources/terms"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "24/7 AI-powered lead capture and qualification across WhatsApp, web chat, and Instagram",
+    "Conversational appointment booking with calendar sync and automated reminders",
+    "Tier-1 customer support automation trained on proprietary business knowledge",
+    "Retail Vision Engine — computer vision analytics from existing CCTV cameras",
+    "Predictive staffing and inventory forecasting from POS and ERP data",
+    "Automated data entry and invoice processing for finance teams",
+    "Custom AI training on business-specific pricing, products, and tone of voice",
+    "POPIA-compliant data handling and anonymous-only retail analytics"
+  ],
+  "publicApiSurface": [
+    "WhatsApp Business API integration",
+    "Web chat widget embed",
+    "Instagram DM automation",
+    "Calendar integration (appointment booking)",
+    "CRM integration (lead logging and handoff)",
+    "POS system integration (staffing and inventory)",
+    "Accounting software integration (Xero/invoice automation)",
+    "Retail Vision edge-node deployment (CCTV analytics)"
+  ]
+}

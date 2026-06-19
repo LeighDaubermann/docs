@@ -1,0 +1,87 @@
+---
+title: "Accounting Integration: Eradicate Manual Invoice Data Entry"
+sidebarTitle: "Accounting"
+description: "Woblar reads your PDF invoices, categorises expenses, and pushes entries to your accounting software automatically — saving up to 15 hours a week."
+---
+
+Manually transferring invoice data from emails into accounting software is slow, error-prone, and an expensive use of senior finance talent — your team should be analysing numbers, not transcribing them. Woblar eliminates the entire data-capture workflow by connecting to your inbox and your accounting software, reading every incoming invoice automatically, and updating your ledger without anyone touching a keyboard.
+
+## How It Works
+
+Woblar's accounting agent operates end-to-end across your email inbox and accounting platform. Once connected, the pipeline runs continuously and autonomously:
+
+<Steps>
+  <Step title="Woblar connects to your supplier invoice inbox">
+    The agent is granted read access to the email inbox where your supplier invoices arrive. It monitors this inbox continuously for new documents.
+  </Step>
+  <Step title="OCR + AI reads each PDF invoice">
+    An Optical Character Recognition model combined with a large language model extracts every relevant field from incoming PDF invoices — supplier name, invoice number, line items, amounts, VAT, and payment terms — with near-100% accuracy.
+  </Step>
+  <Step title="Expenses are categorised automatically">
+    The agent maps each line item to the correct category based on your chart of accounts. Categories are configured during setup and refined as the model learns your specific suppliers and document formats.
+  </Step>
+  <Step title="Data is pushed to your accounting software via API">
+    Categorised entries are sent directly to your accounting platform — no copy-pasting, no manual uploads, no CSV exports.
+  </Step>
+  <Step title="Your finance team reviews the final ledger entries">
+    Your team logs in to find structured, categorised entries already waiting for review. They approve, adjust if needed, and move on. The data capture is already done.
+  </Step>
+</Steps>
+
+## What You Save
+
+Removing manual data entry from your finance workflow has a compounding effect across time, accuracy, and team capacity.
+
+<CardGroup cols={3}>
+  <Card title="Up to 15 hours per week" icon="clock">
+    The average finance team reclaims up to 15 hours of manual data entry time every week — hours that can be redirected to analysis and decision-making.
+  </Card>
+  <Card title="Elimination of transcription errors" icon="circle-check">
+    Human data entry introduces errors that compound downstream. The OCR + AI model reads invoices consistently and accurately, removing this risk entirely.
+  </Card>
+  <Card title="Faster cash-flow visibility" icon="chart-line">
+    Because invoices are processed the moment they arrive, your ledger reflects reality in near real-time — no batch processing delays, no backlogs.
+  </Card>
+</CardGroup>
+
+## Supported Accounting Software
+
+Woblar pushes processed invoice data to the accounting platforms most South African SMBs rely on. Custom integrations are available on request.
+
+<CardGroup cols={3}>
+  <Card title="Xero" icon="x" />
+  <Card title="QuickBooks" icon="q" />
+  <Card title="Sage" icon="s" />
+</CardGroup>
+
+<Info>
+  Using a different accounting platform? Contact Woblar — if the software has an API, a custom integration can almost always be configured.
+</Info>
+
+## Setup Process
+
+<Steps>
+  <Step title="Share your accounting software and access credentials with Woblar">
+    Let the team know which platform you use and provide the API credentials or login access needed to push data into your ledger.
+  </Step>
+  <Step title="Provide your chart of accounts and expense categories">
+    Share the expense categories your business uses so the agent can map incoming invoice line items correctly from the start.
+  </Step>
+  <Step title="Grant read access to the inbox that receives supplier invoices">
+    Woblar needs read-only access to the email inbox where invoices arrive. No emails are deleted or modified — the agent only reads and extracts.
+  </Step>
+  <Step title="Woblar trains the model on your document formats">
+    The team feeds sample invoices from your key suppliers into the model so it learns the specific layouts, terminology, and formatting it will encounter in production.
+  </Step>
+  <Step title="Go live — invoices start processing automatically">
+    Once training and testing are complete, the pipeline runs continuously. Every new invoice that hits your inbox is read, categorised, and pushed to your accounting software automatically.
+  </Step>
+</Steps>
+
+<Note>
+  Your finance team remains fully in control — they review and approve all ledger entries before anything is finalised. The agent handles the data capture, not the decision-making. Your team's judgement stays at the centre of the process.
+</Note>
+
+<Tip>
+  The more invoice samples you share during setup — especially from your highest-volume suppliers — the faster and more accurately the model learns your specific document formats. A broader training set means fewer corrections in production.
+</Tip>
