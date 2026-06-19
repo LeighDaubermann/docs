@@ -2,74 +2,109 @@
 title: "Woblar: Your 24/7 AI Agent for South African Businesses"
 sidebarTitle: "Introduction"
 description: "Woblar builds and deploys custom AI Agents for South African SMBs — handling leads, bookings, and support on WhatsApp, web chat, and Instagram."
+mode: "custom"
 ---
 
-<div className="pulse-hero">
-  <h1 className="glow-text-red text-5xl mb-4">Command Your <span className="grad-text">Growth</span></h1>
-  <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+<div className="relative z-10 px-4 py-16 lg:py-32 max-w-4xl mx-auto text-center">
+  <h1 className="glow-text-red text-5xl font-bold mb-6">Command Your <span className="grad-text">Growth</span></h1>
+  <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
     Woblar is a managed AI Agent service built specifically for South African SMBs. We build, train, and maintain your agent so you can get your time back.
   </p>
-  <a href="mailto:hello@woblar.com" className="btn-glow">
+  <a href="mailto:hello@woblar.com" className="btn-glow text-lg px-8 py-3">
     Deploy Your Agent
   </a>
 </div>
 
-Instead of missing leads after hours, losing bookings to voicemail, or burning your team on repetitive questions, you get a custom-trained AI Agent that works around the clock — on WhatsApp, web chat, and Instagram — handling the conversations that eat your day. You don't touch a line of code; you just get your time back.
+<div className="px-4 pb-24 max-w-5xl mx-auto">
+  <div className="text-center mb-16">
+    <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+      Instead of missing leads after hours, losing bookings to voicemail, or burning your team on repetitive questions, you get a custom-trained AI Agent that works around the clock — on WhatsApp, web chat, and Instagram — handling the conversations that eat your day. You don't touch a line of code; you just get your time back.
+    </p>
+  </div>
 
-## What Woblar Does
+  <h2 className="text-2xl font-bold text-center mb-8">What Woblar Does</h2>
+  
+  <div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 mb-24">
+    <a className="mintlify-card p-6 flex flex-col gap-4 no-underline hover:no-underline" href="/how-it-works">
+      <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+        <Icon icon="magnet" size="20" />
+      </div>
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-2">Lead Capture</h3>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          Your agent greets every visitor and inbound message, qualifies their intent, and captures their details — even at 2 a.m. on a Sunday. No lead slips through because nobody was available to answer.
+        </p>
+      </div>
+    </a>
+    <a className="mintlify-card p-6 flex flex-col gap-4 no-underline hover:no-underline" href="/how-it-works">
+      <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+        <Icon icon="calendar-check" size="20" />
+      </div>
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-2">Appointment Booking</h3>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          Customers book directly through the conversation. The agent checks availability, confirms the slot, and writes the appointment to your calendar — zero back-and-forth, zero phone tag.
+        </p>
+      </div>
+    </a>
+    <a className="mintlify-card p-6 flex flex-col gap-4 no-underline hover:no-underline" href="/how-it-works">
+      <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+        <Icon icon="headset" size="20" />
+      </div>
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-2">Customer Support</h3>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          Pricing questions, operating hours, product details, returns policies — your agent answers them instantly, every time, in your voice. Your team handles only the queries that genuinely need a human.
+        </p>
+      </div>
+    </a>
+    <a className="mintlify-card p-6 flex flex-col gap-4 no-underline hover:no-underline" href="/how-it-works">
+      <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+        <Icon icon="chart-bar" size="20" />
+      </div>
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-2">Retail Vision</h3>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          For retail clients, Woblar's Retail Vision edge-node surfaces what customers ask about most, which products drive the most enquiries, and where drop-off happens — giving you a clearer picture of your revenue opportunities.
+        </p>
+      </div>
+    </a>
+  </div>
 
-Your AI Agent covers the four pillars that drive revenue and retain customers — from the first enquiry to the confirmed booking and beyond.
-
-<CardGroup cols={2}>
-  <Card title="Lead Capture" icon="magnet">
-    Your agent greets every visitor and inbound message, qualifies their intent, and captures their details — even at 2 a.m. on a Sunday. No lead slips through because nobody was available to answer.
-  </Card>
-  <Card title="Appointment Booking" icon="calendar-check">
-    Customers book directly through the conversation. The agent checks availability, confirms the slot, and writes the appointment to your calendar — zero back-and-forth, zero phone tag.
-  </Card>
-  <Card title="Customer Support" icon="headset">
-    Pricing questions, operating hours, product details, returns policies — your agent answers them instantly, every time, in your voice. Your team handles only the queries that genuinely need a human.
-  </Card>
-  <Card title="Retail Vision" icon="chart-bar">
-    For retail clients, Woblar's Retail Vision edge-node surfaces what customers ask about most, which products drive the most enquiries, and where drop-off happens — giving you a clearer picture of your revenue opportunities.
-  </Card>
-</CardGroup>
-
-## Why Not Just a Chatbot?
-
-There is an important difference between a generic chatbot and a Woblar AI Agent, and it matters for your business.
-
-A generic chatbot follows a fixed decision tree. It can only respond to exact matches, breaks the moment a customer phrases something unexpectedly, and has no knowledge of your business beyond what you manually hard-code into it. It cannot take action — it can only display text.
-
-A Woblar AI Agent is an autonomous system trained exclusively on your business: your pricing, your product catalogue, your tone of voice, your booking rules. It understands natural language, handles conversations that go off-script, and — critically — it *acts*. It qualifies a lead and logs it to your CRM. It checks a real calendar and writes a confirmed booking. It resolves a support query without escalating. It connects to your POS, ERP, or accounting software so that conversation outcomes flow directly into the systems that run your business — rather than sitting in front of them as a dead end.
-
-<Note>
-  Woblar does not sell you software and leave you to figure it out. Every AI Agent is built, trained, and maintained by Woblar's team. You are buying outcomes, not a tool.
-</Note>
-
-## Who Is Woblar For?
-
-Woblar is designed for South African SMBs that deal with high inbound communication volume and cannot afford to staff a 24/7 response team. If customers contact you to ask questions, book appointments, or get support — and those conversations are currently falling through the cracks — Woblar was built for you.
-
-The service is a strong fit for:
-
-- **Service businesses** — medical and dental practices, beauty salons, physiotherapists, consultancies, law firms, and any business where appointment scheduling is core to revenue.
-- **Retail** — online and physical stores that field constant questions about stock, pricing, delivery, and returns.
-- **Hospitality** — guesthouses, lodges, restaurants, and event venues handling booking enquiries across multiple channels.
-- **Logistics and field services** — businesses coordinating pickups, deliveries, or site visits where scheduling accuracy is critical.
-- **Financial services** — brokers, advisors, and insurers where fast lead response and compliant communication matter.
-
-All data handling complies with POPIA (the Protection of Personal Information Act), so your customers' details are managed responsibly and lawfully.
-
-## Ready to Learn More?
-
-Once you understand what Woblar does, the natural next step is understanding exactly how it works under the hood — and what getting set up actually looks like.
-
-<CardGroup cols={2}>
-  <Card title="How It Works" icon="gears" href="/how-it-works">
-    Discover how Woblar trains your AI Agent, connects it to your channels, and keeps it improving with every conversation.
-  </Card>
-  <Card title="Onboarding" icon="rocket" href="/onboarding">
-    Walk through the four-phase onboarding journey and see what Woblar needs from you to go live in 14 days.
-  </Card>
-</CardGroup>
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 className="text-3xl font-bold mb-4">Why Not Just a Chatbot?</h2>
+      <p className="text-gray-400 mb-4 leading-relaxed">
+        A generic chatbot follows a fixed decision tree. It can only respond to exact matches, breaks the moment a customer phrases something unexpectedly, and has no knowledge of your business beyond what you manually hard-code into it. It cannot take action — it can only display text.
+      </p>
+      <p className="text-gray-400 mb-6 leading-relaxed">
+        A Woblar AI Agent is an autonomous system trained exclusively on your business: your pricing, your product catalogue, your tone of voice, your booking rules. It understands natural language, handles conversations that go off-script, and — critically — it <em>acts</em>. It qualifies a lead and logs it to your CRM. It checks a real calendar and writes a confirmed booking.
+      </p>
+      <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
+        <p className="text-sm text-red-200 m-0">
+          <strong className="text-red-500">Note:</strong> Woblar does not sell you software and leave you to figure it out. Every AI Agent is built, trained, and maintained by Woblar's team. You are buying outcomes, not a tool.
+        </p>
+      </div>
+    </div>
+    <div className="grid gap-6">
+      <a className="mintlify-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 no-underline hover:no-underline group" href="/how-it-works">
+        <div className="text-white bg-white/10 w-14 h-14 rounded-xl flex flex-none items-center justify-center group-hover:scale-110 transition-transform">
+          <Icon icon="gears" size="24" />
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-2">How It Works</h3>
+          <p className="text-gray-400 text-sm m-0">Discover how Woblar trains your AI Agent, connects it to your channels, and keeps it improving.</p>
+        </div>
+      </a>
+      <a className="mintlify-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 no-underline hover:no-underline group" href="/onboarding">
+        <div className="text-white bg-white/10 w-14 h-14 rounded-xl flex flex-none items-center justify-center group-hover:scale-110 transition-transform">
+          <Icon icon="rocket" size="24" />
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-2">Onboarding</h3>
+          <p className="text-gray-400 text-sm m-0">Walk through the four-phase onboarding journey and see what Woblar needs from you to go live.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
