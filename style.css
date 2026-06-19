@@ -218,3 +218,126 @@ a[aria-current="page"] {
   background-size: 200px 200px;
   z-index: 9999;
 }
+
+/* =============================================
+   PULSE FOUNDER COMMAND CENTER OVERRIDES
+   ============================================= */
+
+/* --- Aurora Gradients (Dark Mode Only) --- */
+.dark body {
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(200, 16, 46, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(255, 107, 74, 0.03) 0%, transparent 50%) !important;
+  background-attachment: fixed !important;
+}
+
+/* --- Glassmorphism Header --- */
+header#navbar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Remove solid background from inner header elements */
+header#navbar > div:first-child,
+header#navbar > div:nth-child(2) {
+  display: none !important;
+}
+
+/* --- Glassmorphism Sidebar --- */
+.dark #sidebar-content {
+  background: linear-gradient(180deg, rgba(9, 9, 11, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+
+/* --- Glow Navigation Items --- */
+.dark #sidebar-content a[aria-current="page"] {
+  background: rgba(200, 16, 46, 0.08) !important;
+  border-radius: 8px !important;
+  position: relative;
+}
+
+.dark #sidebar-content a[aria-current="page"]::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  background: #c8102e;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 0 8px rgba(200, 16, 46, 0.5);
+}
+
+/* --- Override Mintlify Default Cards --- */
+.dark .mintlify-card, .dark [class*="Card"] {
+  background: rgba(24, 24, 27, 0.5) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.02) !important;
+  transition: all 0.3s ease !important;
+}
+
+.dark .mintlify-card:hover, .dark [class*="Card"]:hover {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background-image: radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px) !important;
+  background-size: 12px 12px !important;
+  transform: translateY(-4px);
+}
+
+/* --- Custom Woblar Components for Markdown --- */
+.pulse-hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+.glow-text-red {
+  text-shadow: 0 0 10px rgba(200, 16, 46, 0.5);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.grad-text {
+  background: linear-gradient(110deg,#fff 0%,#fff 40%,#ef3b2c 50%,#fff 60%,#fff 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+.btn-glow {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  color: #fff !important;
+  background: #c8102e;
+  border-radius: 9999px;
+  text-decoration: none;
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 10px 40px -10px rgba(200,16,46,.6), inset 0 0 0 1px rgba(255,255,255,.1);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-glow:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.btn-glow::after {
+  content:""; position:absolute; inset:-2px; border-radius: 9999px; z-index:-1;
+  background: conic-gradient(from 0deg, #c8102e, #ff6b4a, #c8102e);
+  opacity:.6; filter: blur(14px);
+}
