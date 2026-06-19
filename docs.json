@@ -6,11 +6,7 @@
   "colors": {
     "primary": "#c8102e",
     "light": "#ef3b2c",
-    "dark": "#a00d24",
-    "background": {
-      "dark": "#0a0a0a",
-      "light": "#f3efe8"
-    }
+    "dark": "#a00d24"
   },
   "favicon": "https://icons.duckduckgo.com/ip3/woblar.com.ico",
   "logo": {
