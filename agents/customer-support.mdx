@@ -10,26 +10,74 @@ Roughly 80% of what lands in your support inbox is low-complexity, high-volume n
 
 Your agent resolves the most common support queries without any human involvement.
 
-<CardGroup cols={2}>
-  <Card title="FAQs & Store Information" icon="circle-question">
-    Opening hours, location, parking, accepted payment methods — the agent answers these instantly and consistently, every time.
-  </Card>
-  <Card title="Order Status & Tracking" icon="box">
-    The agent queries your order management system and gives customers a live, accurate update — without anyone logging into a dashboard.
-  </Card>
-  <Card title="Returns & Refund Policy" icon="arrow-rotate-left">
-    Your returns process, eligibility criteria, and timeframes are explained clearly and in your brand's voice — not a copy-paste from a policy document.
-  </Card>
-  <Card title="Product Information & Pricing" icon="tag">
-    Specifications, availability, sizing, compatibility — the agent answers product questions accurately using your own catalogue and documentation.
-  </Card>
-  <Card title="Account & Password Queries" icon="lock">
-    The agent walks customers through self-service account actions, reducing the ticket volume your team handles for basic access issues.
-  </Card>
-  <Card title="Booking Confirmations" icon="calendar-check">
-    Customers asking to confirm, check, or reschedule an appointment get an immediate, accurate response pulled directly from your calendar.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="circle-question" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">FAQs & Store Information</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Opening hours, location, parking, accepted payment methods — the agent answers these instantly and consistently, every time.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="box" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Order Status & Tracking</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The agent queries your order management system and gives customers a live, accurate update — without anyone logging into a dashboard.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="arrow-rotate-left" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Returns & Refund Policy</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Your returns process, eligibility criteria, and timeframes are explained clearly and in your brand's voice — not a copy-paste from a policy document.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="tag" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Product Information & Pricing</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Specifications, availability, sizing, compatibility — the agent answers product questions accurately using your own catalogue and documentation.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="lock" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Account & Password Queries</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The agent walks customers through self-service account actions, reducing the ticket volume your team handles for basic access issues.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="calendar-check" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Booking Confirmations</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Customers asking to confirm, check, or reschedule an appointment get an immediate, accurate response pulled directly from your calendar.
+      </p>
+    </div>
+  </div>
+</div>
 
 ## Intelligent Escalation
 

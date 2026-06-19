@@ -10,23 +10,63 @@ Your Woblar AI Agent qualifies leads and books meetings around the clock — the
 
 Every meaningful interaction your agent has with a prospect flows directly into your CRM. That includes:
 
-<CardGroup cols={2}>
-  <Card title="Qualified Lead Profiles" icon="user-check">
-    Full contact details and qualification data captured during the conversation — name, contact info, budget signals, and timeline.
-  </Card>
-  <Card title="Conversation Transcripts" icon="message-lines">
-    A full record of every chat so your sales team picks up exactly where the agent left off — no context lost.
-  </Card>
-  <Card title="Qualification Scores" icon="chart-bar">
-    The agent evaluates budget, intent, and fit — and logs a qualification score so your closers know exactly who to prioritise.
-  </Card>
-  <Card title="Booked Meeting Details" icon="calendar-check">
-    When the agent hard-books a meeting, the event appears directly in the relevant closer's CRM calendar with all lead context attached.
-  </Card>
-  <Card title="Follow-Up Reminders" icon="bell">
-    Scheduled reminders are created automatically so no qualified lead goes cold between booking and the actual meeting.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="user-check" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Qualified Lead Profiles</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Full contact details and qualification data captured during the conversation — name, contact info, budget signals, and timeline.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="message-lines" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Conversation Transcripts</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        A full record of every chat so your sales team picks up exactly where the agent left off — no context lost.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="chart-bar" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Qualification Scores</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The agent evaluates budget, intent, and fit — and logs a qualification score so your closers know exactly who to prioritise.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="calendar-check" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Booked Meeting Details</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        When the agent hard-books a meeting, the event appears directly in the relevant closer's CRM calendar with all lead context attached.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="bell" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Follow-Up Reminders</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Scheduled reminders are created automatically so no qualified lead goes cold between booking and the actual meeting.
+      </p>
+    </div>
+  </div>
+</div>
 
 ## How It Works
 
@@ -38,11 +78,41 @@ Woblar's team handles all integration logic, field mapping, and testing before y
 
 Woblar connects your agent to the most widely used CRM platforms. If yours isn't listed, custom integrations are available on request.
 
-<CardGroup cols={3}>
-  <Card title="HubSpot" icon="hubspot" />
-  <Card title="Salesforce" icon="salesforce" />
-  <Card title="Zoho CRM" icon="z" />
-</CardGroup>
+<div className="grid sm:grid-cols-3 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="hubspot" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">HubSpot</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="salesforce" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Salesforce</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="z" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Zoho CRM</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+</div>
 
 <Info>
   Need a CRM not listed here? Reach out to the Woblar team — if the platform has an API, a custom integration is almost always possible.

@@ -29,11 +29,41 @@ Once connected, your agent handles the entire booking process from first message
 
 Woblar connects to the calendar tools most businesses already use. Custom setups are available on request.
 
-<CardGroup cols={3}>
-  <Card title="Google Calendar" icon="google" />
-  <Card title="Calendly" icon="calendar" />
-  <Card title="Microsoft Outlook" icon="microsoft" />
-</CardGroup>
+<div className="grid sm:grid-cols-3 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="google" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Google Calendar</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="calendar" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Calendly</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="microsoft" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Microsoft Outlook</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+</div>
 
 <Info>
   Using a different scheduling tool? Contact Woblar — if your platform supports API or webhook access, a custom integration can be configured.
@@ -43,14 +73,30 @@ Woblar connects to the calendar tools most businesses already use. Custom setups
 
 If your business requires a deposit to secure a booking, the agent handles that too. As part of the booking conversation, the agent requests payment before finalising the appointment — no separate payment link, no chasing. Woblar sets up the payment gateway connection as part of your onboarding, so the entire flow from first message to paid, confirmed booking happens without any human involvement.
 
-<CardGroup cols={2}>
-  <Card title="In-conversation payment request" icon="credit-card">
-    The agent asks for the deposit naturally within the booking flow — customers pay without leaving the chat.
-  </Card>
-  <Card title="Booking confirmed only on payment" icon="lock">
-    The slot is only blocked in your calendar once the deposit is received, eliminating unpaid no-shows.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="credit-card" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">In-conversation payment request</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The agent asks for the deposit naturally within the booking flow — customers pay without leaving the chat.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="lock" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Booking confirmed only on payment</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The slot is only blocked in your calendar once the deposit is received, eliminating unpaid no-shows.
+      </p>
+    </div>
+  </div>
+</div>
 
 ## Setup Process
 

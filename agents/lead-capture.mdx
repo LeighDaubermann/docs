@@ -20,20 +20,52 @@ Your agent runs continuously across every channel you use to capture inbound int
 
 Your Lead Capture Agent plugs the leak at every point where intent is highest and response time is most critical.
 
-<CardGroup cols={2}>
-  <Card title="Inbound Enquiries" icon="message-lines">
-    Every WhatsApp message, web chat ping, and SMS that arrives on your business number is caught and responded to instantly — no matter the hour.
-  </Card>
-  <Card title="Web Form Submissions" icon="browser">
-    When a prospect fills out your contact or quote form, the agent picks up the thread immediately and converts that static submission into a live conversation.
-  </Card>
-  <Card title="After-Hours Messages" icon="moon">
-    The majority of high-intent prospects research and reach out outside business hours. Your agent is always on, ensuring after-hours messages are your best-converting moments.
-  </Card>
-  <Card title="Missed-Call Callbacks" icon="phone-missed">
-    When a prospect calls and can't get through, the agent follows up via WhatsApp or SMS within seconds — turning a missed call into a booked meeting.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="message-lines" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Inbound Enquiries</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Every WhatsApp message, web chat ping, and SMS that arrives on your business number is caught and responded to instantly — no matter the hour.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="browser" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Web Form Submissions</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        When a prospect fills out your contact or quote form, the agent picks up the thread immediately and converts that static submission into a live conversation.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="moon" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">After-Hours Messages</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The majority of high-intent prospects research and reach out outside business hours. Your agent is always on, ensuring after-hours messages are your best-converting moments.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="phone-missed" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Missed-Call Callbacks</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        When a prospect calls and can't get through, the agent follows up via WhatsApp or SMS within seconds — turning a missed call into a booked meeting.
+      </p>
+    </div>
+  </div>
+</div>
 
 ## Training Your Lead Capture Agent
 

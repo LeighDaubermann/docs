@@ -22,17 +22,41 @@ Because the agent is trained on natural language rather than keyword rules, it h
 
 Your AI Agent meets your customers where they already are. Woblar connects the agent to the communication channels that drive the most inbound volume for your business.
 
-<CardGroup cols={3}>
-  <Card title="WhatsApp" icon="whatsapp">
-    South Africa's dominant messaging channel. Your agent responds to WhatsApp messages instantly, 24/7, through your existing WhatsApp Business number.
-  </Card>
-  <Card title="Web Chat" icon="globe">
-    A chat widget embedded on your website so visitors get immediate answers without picking up the phone or sending an email and waiting.
-  </Card>
-  <Card title="Instagram" icon="instagram">
-    Respond to DMs and enquiries from your Instagram audience automatically, capturing leads who discover you through social media.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-3 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="whatsapp" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        South Africa's dominant messaging channel. Your agent responds to WhatsApp messages instantly, 24/7, through your existing WhatsApp Business number.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="globe" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Web Chat</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        A chat widget embedded on your website so visitors get immediate answers without picking up the phone or sending an email and waiting.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="instagram" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Instagram</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Respond to DMs and enquiries from your Instagram audience automatically, capturing leads who discover you through social media.
+      </p>
+    </div>
+  </div>
+</div>
 
 Channel setup is handled entirely by Woblar. You provide access to your business accounts and Woblar does the technical integration. From the moment the agent goes live, every inbound message on every connected channel receives an immediate, accurate response.
 
@@ -89,11 +113,27 @@ Based on these insights, Woblar updates the agent's knowledge base and conversat
 
 Now that you understand how the agent works, see exactly what Woblar's onboarding process looks like — and what you need to prepare before your first call.
 
-<CardGroup cols={2}>
-  <Card title="Onboarding Journey" icon="rocket" href="/onboarding">
-    Walk through the four phases from discovery to a live AI Agent, and see what Woblar needs from you to go live in 14 days.
-  </Card>
-  <Card title="Introduction" icon="house" href="/introduction">
-    Go back to the overview of what Woblar does and who it is built for.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <a className="mintlify-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 no-underline hover:no-underline group" href="/onboarding">
+    <div className="text-white bg-white/10 w-14 h-14 rounded-xl flex flex-none items-center justify-center group-hover:scale-110 transition-transform">
+      <Icon icon="rocket" size="24" />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold text-white mb-2">Onboarding Journey</h3>
+      <p className="text-gray-400 text-sm m-0">
+        Walk through the four phases from discovery to a live AI Agent, and see what Woblar needs from you to go live in 14 days.
+      </p>
+    </div>
+  </a>
+  <a className="mintlify-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 no-underline hover:no-underline group" href="/introduction">
+    <div className="text-white bg-white/10 w-14 h-14 rounded-xl flex flex-none items-center justify-center group-hover:scale-110 transition-transform">
+      <Icon icon="house" size="24" />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold text-white mb-2">Introduction</h3>
+      <p className="text-gray-400 text-sm m-0">
+        Go back to the overview of what Woblar does and who it is built for.
+      </p>
+    </div>
+  </a>
+</div>

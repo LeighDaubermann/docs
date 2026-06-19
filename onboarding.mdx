@@ -68,11 +68,27 @@ Your AI Agent is 14 days away. Send Woblar an email and the team will schedule y
 
 **Email:** [hello@woblar.com](mailto:hello@woblar.com)
 
-<CardGroup cols={2}>
-  <Card title="How It Works" icon="gears" href="/how-it-works">
-    Understand how Woblar trains and deploys your AI Agent before your first call.
-  </Card>
-  <Card title="Introduction" icon="house" href="/introduction">
-    Go back to the overview of what Woblar does and who it is built for.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <a className="mintlify-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 no-underline hover:no-underline group" href="/how-it-works">
+    <div className="text-white bg-white/10 w-14 h-14 rounded-xl flex flex-none items-center justify-center group-hover:scale-110 transition-transform">
+      <Icon icon="gears" size="24" />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold text-white mb-2">How It Works</h3>
+      <p className="text-gray-400 text-sm m-0">
+        Understand how Woblar trains and deploys your AI Agent before your first call.
+      </p>
+    </div>
+  </a>
+  <a className="mintlify-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 no-underline hover:no-underline group" href="/introduction">
+    <div className="text-white bg-white/10 w-14 h-14 rounded-xl flex flex-none items-center justify-center group-hover:scale-110 transition-transform">
+      <Icon icon="house" size="24" />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold text-white mb-2">Introduction</h3>
+      <p className="text-gray-400 text-sm m-0">
+        Go back to the overview of what Woblar does and who it is built for.
+      </p>
+    </div>
+  </a>
+</div>

@@ -42,20 +42,52 @@ Here is exactly what your customer experiences from first message to confirmed a
 
 Conversational booking transforms any business where appointments are revenue.
 
-<CardGroup cols={2}>
-  <Card title="Clinics & Healthcare" icon="stethoscope">
-    Reduce front desk call volume and after-hours missed bookings. Patients confirm, reschedule, and receive reminders — all via WhatsApp.
-  </Card>
-  <Card title="Salons & Beauty" icon="scissors">
-    Let your stylists focus on clients in the chair while the agent fills the rest of the day's schedule autonomously.
-  </Card>
-  <Card title="Consultancies" icon="briefcase">
-    Never lose a prospective client because your assistant was busy. The agent books discovery calls and follow-ups around the clock.
-  </Card>
-  <Card title="Legal & Financial Advisors" icon="scale-balanced">
-    High-value clients expect responsive, professional communication. Your agent delivers that standard at every hour — even before the engagement has officially started.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-2 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="stethoscope" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Clinics & Healthcare</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Reduce front desk call volume and after-hours missed bookings. Patients confirm, reschedule, and receive reminders — all via WhatsApp.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="scissors" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Salons & Beauty</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Let your stylists focus on clients in the chair while the agent fills the rest of the day's schedule autonomously.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="briefcase" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Consultancies</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Never lose a prospective client because your assistant was busy. The agent books discovery calls and follow-ups around the clock.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="scale-balanced" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Legal & Financial Advisors</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        High-value clients expect responsive, professional communication. Your agent delivers that standard at every hour — even before the engagement has officially started.
+      </p>
+    </div>
+  </div>
+</div>
 
 ## What You Provide
 

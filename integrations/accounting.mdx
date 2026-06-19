@@ -32,27 +32,81 @@ Woblar's accounting agent operates end-to-end across your email inbox and accoun
 
 Removing manual data entry from your finance workflow has a compounding effect across time, accuracy, and team capacity.
 
-<CardGroup cols={3}>
-  <Card title="Up to 15 hours per week" icon="clock">
-    The average finance team reclaims up to 15 hours of manual data entry time every week — hours that can be redirected to analysis and decision-making.
-  </Card>
-  <Card title="Elimination of transcription errors" icon="circle-check">
-    Human data entry introduces errors that compound downstream. The OCR + AI model reads invoices consistently and accurately, removing this risk entirely.
-  </Card>
-  <Card title="Faster cash-flow visibility" icon="chart-line">
-    Because invoices are processed the moment they arrive, your ledger reflects reality in near real-time — no batch processing delays, no backlogs.
-  </Card>
-</CardGroup>
+<div className="grid sm:grid-cols-3 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="clock" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Up to 15 hours per week</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        The average finance team reclaims up to 15 hours of manual data entry time every week — hours that can be redirected to analysis and decision-making.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="circle-check" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Elimination of transcription errors</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Human data entry introduces errors that compound downstream. The OCR + AI model reads invoices consistently and accurately, removing this risk entirely.
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="chart-line" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Faster cash-flow visibility</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        Because invoices are processed the moment they arrive, your ledger reflects reality in near real-time — no batch processing delays, no backlogs.
+      </p>
+    </div>
+  </div>
+</div>
 
 ## Supported Accounting Software
 
 Woblar pushes processed invoice data to the accounting platforms most South African SMBs rely on. Custom integrations are available on request.
 
-<CardGroup cols={3}>
-  <Card title="Xero" icon="x" />
-  <Card title="QuickBooks" icon="q" />
-  <Card title="Sage" icon="s" />
-</CardGroup>
+<div className="grid sm:grid-cols-3 gap-x-6 gap-y-6 my-8">
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="x" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Xero</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="q" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">QuickBooks</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+  <div className="mintlify-card p-6 flex flex-col gap-4">
+    <div className="text-red-500 bg-red-500/10 w-10 h-10 rounded-lg flex items-center justify-center">
+      <Icon icon="s" size="20" />
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-2">Sage</h3>
+      <p className="text-gray-400 text-sm leading-relaxed m-0">
+        
+      </p>
+    </div>
+  </div>
+</div>
 
 <Info>
   Using a different accounting platform? Contact Woblar — if the software has an API, a custom integration can almost always be configured.
