@@ -1,9 +1,17 @@
 :root {
   --default-border-color: var(--gray-200);
+  --primary: 220 38 38;
+  --primary-light: 239 68 68;
+  --font-sans: 'Inter', sans-serif;
 }
 
 .dark {
   --default-border-color: var(--gray-800);
+}
+
+body {
+  font-family: var(--font-sans);
+  letter-spacing: -0.025em;
 }
 
 #sidebar .nav-dropdown-trigger {
@@ -48,7 +56,7 @@
 }
 
 #sidebar .nav-anchor span {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -89,11 +97,11 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
 }
 
 [data-product-guide-index] a:not(.product-guide-feature-card) {
-  background-color: #fafafa !important;
+  background-color: #f7f5f3 !important;
 }
 
 .dark [data-product-guide-index] a:not(.product-guide-feature-card) {
-  background-color: #09090b !important;
+  background-color: #0f0f0f !important;
 }
 
 .product-guide-feature-card {
@@ -102,13 +110,12 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
   flex-direction: column !important;
   justify-content: space-between !important;
   min-height: 260px;
-  background: url('/images/sample-feature-light.png') center / cover no-repeat !important;
-  border: none !important;
+  background: #1a1a1a !important;
+  border: 1px solid rgb(var(--primary)) !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
   color: white !important;
-  .dark & {
-    background-image: url('/images/sample-feature-dark.png') !important;
-  }
+  padding: 24px !important;
 }
 
 .product-guide-feature-card > div {
@@ -146,4 +153,68 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
 img.nav-logo {
   max-width: 220px;
   height: auto;
+}
+
+/* =============================================
+   WOBLAR BRAND EXTRAS
+   ============================================= */
+
+/* --- Headings: tight tracking matching website --- */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+/* --- Branded "Get in Touch" CTA button --- */
+#topbar-cta-button a {
+  background: #c8102e !important;
+  box-shadow: 0 10px 40px -10px rgba(200, 16, 46, 0.55), inset 0 0 0 1px rgba(255,255,255,0.1) !important;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease !important;
+  border-radius: 9999px !important;
+}
+
+#topbar-cta-button a:hover {
+  opacity: 0.85 !important;
+  box-shadow: 0 14px 48px -10px rgba(200, 16, 46, 0.7), inset 0 0 0 1px rgba(255,255,255,0.15) !important;
+}
+
+/* --- Inline code: red-tinted to match brand accent --- */
+code:not(pre code) {
+  color: #c8102e !important;
+  background: rgba(200, 16, 46, 0.07) !important;
+  border: 1px solid rgba(200, 16, 46, 0.15) !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+  padding: 0.1em 0.35em !important;
+}
+
+.dark code:not(pre code) {
+  color: #ef3b2c !important;
+  background: rgba(239, 59, 44, 0.1) !important;
+  border-color: rgba(239, 59, 44, 0.2) !important;
+}
+
+/* --- Dark mode code blocks: obsidian tone --- */
+.dark pre {
+  background: #111111 !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+/* --- Active sidebar item: Woblar red --- */
+.dark a[aria-current="page"],
+a[aria-current="page"] {
+  color: #c8102e !important;
+}
+
+/* --- Subtle grain on dark mode (matches website) --- */
+.dark body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.2 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+  z-index: 9999;
 }

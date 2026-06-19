@@ -4,14 +4,26 @@
   "name": "Woblar",
   "description": "Documentation for Woblar — custom AI Agents for South African businesses.",
   "colors": {
-    "primary": "#00FF88",
-    "light": "#00FF88",
-    "dark": "#00CC66"
+    "primary": "#c8102e",
+    "light": "#ef3b2c",
+    "dark": "#a00d24",
+    "background": {
+      "dark": "#0a0a0a",
+      "light": "#f3efe8"
+    }
   },
   "favicon": "https://icons.duckduckgo.com/ip3/woblar.com.ico",
   "logo": {
     "light": "https://media.brand.dev/e60aa503-c7c1-481f-a8cf-43d0e8d30491.svg",
     "dark": "https://media.brand.dev/e60aa503-c7c1-481f-a8cf-43d0e8d30491.svg"
+  },
+  "font": {
+    "headings": {
+      "family": "Inter"
+    },
+    "body": {
+      "family": "Inter"
+    }
   },
   "icons": {
     "library": "lucide"
@@ -25,7 +37,7 @@
   "navigation": {
     "global": {
       "anchors": [
-        { "anchor": "Home", "icon": "house", "href": "/" },
+        { "anchor": "Home", "icon": "house", "href": "https://woblar.com" },
         { "anchor": "Contact", "icon": "mail", "href": "mailto:hello@woblar.com" }
       ]
     },
